@@ -163,3 +163,61 @@ chname {
 span.highlight {
   background-color: #ffffd0;
 }
+
+table {
+  width: 100%;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Media query for screens smaller than 512px */
+@media screen and (max-width: 512px) {
+  /* Hide original name */
+  td > p:first-child > name {
+      display: none;
+  }
+  
+  /* Adjust table layout */
+  table tbody tr td table:first-of-type tbody tr {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center children horizontally */
+  }
+  
+  /* Style photo cell */
+  table tbody tr td table:first-of-type tbody tr td:last-child {
+      width: 60% !important; /* Make photo cell smaller */
+      max-width: 200px !important; /* Maximum width for photo cell */
+      min-width: 200px !important; /* Minimum width for photo cell */
+      order: -1; /* Move photo to top */
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center photo horizontally */
+      padding-bottom:0 !important;
+  }
+  
+  /* Style the photo itself */
+  table tbody tr td table:first-of-type tbody tr td:last-child img {
+      width: 100%;
+      height: auto;
+  }
+  
+  /* Style bio cell */
+  table tbody tr td table:first-of-type tbody tr td:first-child {
+      width: 100% !important;
+  }
+  
+  /* Add name above photo */
+  table tbody tr td table:first-of-type tbody tr td:last-child::before {
+      content: "Hongjie Li";
+      display: block;
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 1rem;
+  }
+}
