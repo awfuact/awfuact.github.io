@@ -204,6 +204,7 @@ table {
   table tbody tr td table:first-of-type tbody tr td:last-child img {
       width: 100%;
       height: auto;
+      object-fit: contain;
   }
   
   /* Style bio cell */
@@ -213,7 +214,7 @@ table {
   
   /* Add name above photo */
   table tbody tr td table:first-of-type tbody tr td:last-child::before {
-      content: "Hongjie Li";
+      content: "Hongji3 Li";
       display: block;
       font-family: 'Lato', Verdana, Helvetica, sans-serif;
       font-size: 30px;
