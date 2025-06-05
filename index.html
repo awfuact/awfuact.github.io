@@ -30,9 +30,13 @@
                   <name>Hongjie Li</name>
                 </p>
                 <p>
-                  I am a undergraduate student in <a href="https://eecs.pku.edu.cn/" target="_blank">School of EECS</a>, <a href="https://www.pku.edu.cn" target="_blank">Peking University</a>. I'm also a member of the  <a href="https://zhi-class.ai/" target="_blank">PKU Zhi Class</a>.
+                  I am a 4th-year undergraduate student in <a href="https://eecs.pku.edu.cn/" target="_blank">School of EECS</a>, <a href="https://www.pku.edu.cn" target="_blank">Peking University</a>. I'm also a member of the  <a href="https://zhi-class.ai/" target="_blank">PKU Zhi Class</a>.
                   I am currently a student researcher in <a href="https://pku.ai" target="_blank">Cognitive Reasoning (CoRe) Lab</a> at PKU-IAI, advised by <a href="https://yzhu.io" target="_blank">Prof. Yixin Zhu</a>.
-                  I spent a wonderful summer in <a href="https://svl.stanford.edu/" target="_blank">Stanford Vision and Learning Lab (SVL)</a> at <a href="https://www.stanford.edu/" target="_blank">Stanford University</a> as a research intern, advised by <a href="https://jiajunwu.com/" target="_blank">Prof. Jiajun Wu</a>.
+                  I am also a student researcher in the General Vision Lab, <a href="https://bigai.ai" target="_blank">BIGAI</a>, and I'm grateful to be advised by <a href="https://siyuanhuang.com" target="_blank">Dr. Siyuan Huang</a>.
+                  I am now working as a research intern in <a href="https://svl.stanford.edu/" target="_blank">Stanford Vision and Learning Lab (SVL)</a> at <a href="https://www.stanford.edu/" target="_blank">Stanford University</a>, advised by <a href="https://jiajunwu.com/" target="_blank">Prof. Jiajun Wu</a>.
+                </p>
+                <p>
+                  My research interests lie in 3D computer vision and graphics, including human-object/scene interaction (HOI/HSI), 3D scene understanding, and generative modeling. My long-term goal is to build machines that perceive and reason about the physical world through interaction, ultimately developing algorithms that enable embodied agents like digital humans and robots to autonomously interact with their surroundings as humans do.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:lihongjie@stu.pku.edu.cn">Email</a>
@@ -71,6 +75,29 @@
                 <a href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a>
                 <br>
                 <em>CVPR</em>, 2025
+                <br>
+                <a href="#" target="_blank">[Abs]</a>
+                &nbsp
+                <a href="static/publications/cvpr25_motionrefit/paper.pdf" target="_blank">[PDF]</a>
+                &nbsp
+                <a href="https://arxiv.org/abs/2503.20724" target="_blank">[arXiv]</a>
+                &nbsp
+                <a href="https://github.com/emptybulebox1/motionRefit/" target="_blank">[Code]</a>
+                &nbsp
+                <a href="https://drive.google.com/file/d/1LiNgkRZ-Kmv5rKI3BOaHVCudhrMtE5hx/view?usp=sharing" target="_blank">[Data]</a>
+                &nbsp
+                <a href="https://awfuact.github.io/motionrefit/" target="_blank">[Project]</a>
+                &nbsp
+                <a href="https://huggingface.co/spaces/Yzy00518/motionReFit" target="_blank">[Hugging Face]</a>
+                &nbsp
+                <a href="https://techxplore.com/news/2025-04-dynamic-generate-realistic-human-motions.html" target="_blank">[TechXplore]</a>
+                <br>
+                <abs>
+                  Text-guided motion editing enables high-level semantic control and iterative modifications beyond traditional keyframe animation. Existing methods rely on limited pre-collected training triplets (original motion, edited motion, and instruction), which severely hinders their versatility in diverse editing scenarios. We introduce MotionCutMix, an online data augmentation technique that dynamically generates training triplets by blending body part motions based on input text. While MotionCutMix effectively expands the training distribution, the compositional nature introduces increased randomness and potential body part incoordination. To model such a rich distribution, we present MotionReFit, an auto-regressive diffusion model with a motion coordinator. The auto-regressive architecture facilitates learning by decomposing long sequences, while the motion coordinator mitigates the artifacts of motion composition. Our method handles both spatial and temporal motion edits directly from high-level human instructions, without relying on additional specifications or Large Language Models (LLMs). Through extensive experiments, we show that MotionReFit achieves state-of-the-art performance in text-guided motion editing. Ablation studies further verify that MotionCutMix significantly improves the model's generalizability while maintaining training convergence.
+                </abs>
+                <p>
+                  tl;dr: Our text-guided motion editor combines dynamic body-part blending augmentation with an auto-regressive diffusion model to enable diverse motion editing without extensive pre-collected training data.
+                </p>
               </td>
             </tr>
           </tbody></table>
@@ -87,6 +114,27 @@
                 <a href="https://jiajunwu.com/" target="_blank">Jiajun Wu</a>
                 <br>
                 <em>arXiv</em>, 2024
+                <br>
+                <a href="#" target="_blank">[Abs]</a>
+                &nbsp
+                <a href="static/publications/arxiv24_zerohsi/paper.pdf" target="_blank">[PDF]</a>
+                &nbsp
+                <a href="https://arxiv.org/abs/2412.18600" target="_blank">[arXiv]</a>
+                <!-- &nbsp
+                <a href="" target="_blank">[Code]</a> -->
+                <!-- &nbsp
+                <a href="" target="_blank">[Data]</a> -->
+                &nbsp
+                <a href="https://awfuact.github.io/zerohsi/" target="_blank">[Project]</a>
+                <!-- &nbsp
+                <a href="" target="_blank">[Hugging Face]</a> -->
+                <br>
+                <abs>
+                  Human-scene interaction (HSI) generation is crucial for applications in embodied AI, virtual reality, and robotics. Yet, existing methods cannot synthesize interactions in unseen environments such as in-the-wild scenes or reconstructed scenes, as they rely on paired 3D scenes and captured human motion data for training, which are unavailable for unseen environments. We present ZeroHSI, a novel approach that enables zero-shot 4D human-scene interaction synthesis, eliminating the need for training on any MoCap data. Our key insight is to distill human-scene interactions from state-of-the-art video generation models, which have been trained on vast amounts of natural human movements and interactions, and use differentiable rendering to reconstruct human-scene interactions. ZeroHSI can synthesize realistic human motions in both static scenes and environments with dynamic objects, without requiring any ground-truth motion data. We evaluate ZeroHSI on a curated dataset of different types of various indoor and outdoor scenes with different interaction prompts, demonstrating its ability to generate diverse and contextually appropriate human-scene interactions.
+                </abs>
+                <p>
+                  tl;dr: We leverage video generation models and differentiable rendering to synthesize zero-shot human-scene interactions without requiring motion capture data.
+                </p>
               </td>
             </tr>
           </tbody></table>
@@ -106,6 +154,29 @@
                 <a href="https://yzhu.io/" target="_blank">Yixin Zhu</a>
                 <br>
                 <em>SIGGRAPH Asia</em>, 2024
+                <br>
+                <a href="#" target="_blank">[Abs]</a>
+                &nbsp
+                <a href="static/publications/siggraph-asia24_lingo/paper.pdf" target="_blank">[PDF]</a>
+                &nbsp
+                <a href="https://arxiv.org/abs/2410.03187" target="_blank">[arXiv]</a>
+                &nbsp
+                <a href="https://github.com/mileret/lingo-release" target="_blank">[Code]</a>
+                &nbsp
+                <a href="https://drive.google.com/file/d/1RadpLt-woPvsIGk9yDW7yX7br3sRO-zi/view" target="_blank">[Data]</a>
+                &nbsp
+                <a href="https://lingomotions.com/" target="_blank">[Project]</a>
+                <!-- &nbsp
+                <a href="" target="_blank">[Hugging Face]</a> -->
+                &nbsp
+                <a href="https://techxplore.com/news/2024-11-framework-motions-human-characters-3d.html" target="_blank">[TechXplore]</a>
+                <br>
+                <abs>
+                  Synthesizing human motions in 3D environments, particularly those with complex activities such as locomotion, hand-reaching, and Human-Object Interaction (HOI), presents substantial demands for user-defined waypoints and stage transitions. These requirements pose challenges for current models, leading to a notable gap in automating the animation of characters from simple human inputs. This paper addresses this challenge by introducing a comprehensive framework for synthesizing multi-stage scene-aware interaction motions directly from a single text instruction and goal location. Our approach employs an auto-regressive diffusion model to synthesize the next motion segment, along with an autonomous scheduler predicting the transition for each action stage. To ensure that the synthesized motions are seamlessly integrated within the environment, we propose a scene representation that considers the local perception both at the start and the goal location. We further enhance the coherence of the generated motion by integrating frame embeddings with language input. Additionally, to support model training, we present a comprehensive motion-captured (MoCap) dataset comprising 16 hours of motion sequences in 120 indoor scenes covering 40 types of motions, each annotated with precise language descriptions. Experimental results demonstrate the efficacy of our method in generating high-quality, multi-stage motions closely aligned with environmental and textual conditions.
+                </abs>
+                <p>
+                  tl;dr: We present a framework that synthesizes multi-stage scene-aware human interaction motions from just text instructions and goal locations.
+                </p>
               </td>
             </tr>
           </tbody></table>
@@ -129,6 +200,27 @@
                 <br>
                 <em>CVPR</em>, 2024
                 <font color="red"><b>(Highlight)</b></font>
+                <br>
+                <a href="#" target="_blank">[Abs]</a>
+                &nbsp
+                <a href="static/publications/cvpr24_trumans/paper.pdf" target="_blank">[PDF]</a>
+                &nbsp
+                <a href="https://arxiv.org/abs/2403.08629" target="_blank">[arXiv]</a>
+                &nbsp
+                <a href="https://github.com/jnnan/trumans_utils" target="_blank">[Code]</a>
+                &nbsp
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdF62BQ9TQTSTW0HzyNeRPhlzmREL5T8hUGn-484W1I3eVihQ/viewform" target="_blank">[Data]</a>
+                &nbsp
+                <a href="https://jnnan.github.io/trumans/" target="_blank">[Project]</a>
+                &nbsp
+                <a href="https://huggingface.co/spaces/jnnan/trumans" target="_blank">[Hugging Face]</a>
+                <br>
+                <abs>
+                  Confronting the challenges of data scarcity and advanced motion synthesis in HSI modeling, we introduce the TRUMANS (Tracking Human Actions in Scenes) dataset alongside a novel HSI motion synthesis method. TRUMANS stands as the most comprehensive motion-captured HSI dataset currently available, encompassing over 15 hours of human interactions across 100 indoor scenes. It intricately captures whole-body human motions and part-level object dynamics, focusing on the realism of contact. This dataset is further scaled up by transforming physical environments into exact virtual models and applying extensive augmentations to appearance and motion for both humans and objects while maintaining interaction fidelity. Utilizing TRUMANS, we devise a diffusion-based autoregressive model that efficiently generates Human-Scene Interaction (HSI) sequences of any length, taking into account both scene context and intended actions. In experiments, our approach shows remarkable zero-shot generalizability on a range of 3D scene datasets (e.g., PROX, Replica, ScanNet, ScanNet++), producing motions that closely mimic original motion-captured sequences, as confirmed by quantitative experiments and human studies.
+                </abs>
+                <p>
+                  tl;dr: We introduce the largest motion-captured HSI dataset, enabling our diffusion-based autoregressive model to generate realistic human-scene interactions with across various 3D environments.
+                </p>
               </td>
             </tr>
           </tbody></table>
@@ -145,6 +237,7 @@
               <td style="padding:10px;width:18px;vertical-align:middle"><img src="static/images/Institution/svl.png", width="100px"></td>
               <td width="90%" valign="center">
                 <b>Stanford Vision and Learning Lab (SVL)</b>, Stanford University, USA
+                <br> Jun 2025 - Present
                 <br> Jun 2024 - Aug 2024
                 <br>
                 <br> <b>Research Intern</b>
@@ -152,9 +245,19 @@
               </td>
             </tr>
             <tr>
+              <td style="padding:10px;width:18px;vertical-align:middle"><img src="static/images/Institution/bigai.png", width="100px"></td>
+              <td width="90%" valign="center">
+                <b>State Key Laboratory of General Artificial Intelligence (BIGAI)</b>, China
+                <br> Sept 2023 - Present
+                <br>
+                <br> <b>Student Researcher</b>
+                <br> Advisor: <a href="https://siyuanhuang.com" target="_blank">Dr. Siyuan Huang</a>
+              </td>
+            </tr>
+            <tr>
               <td style="padding:10px;width:18px;vertical-align:middle"><img src="static/images/Institution/core_lab.png", width="100px"></td>
               <td width="90%" valign="center">
-                <b>Cognitive Reasoning (CoRe) Lab</b>, Peking University, China
+                <b>Cognitive Reasoning (CoRe) Lab</b>, Institute for Artificial Intelligence, Peking University, China
                 <br> Jan 2023 - Present
                 <br>
                 <br> <b>Student Researcher</b>
@@ -176,7 +279,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Updated on April 28, 2025.
+                  Updated on June 5, 2025.
                   <br>
                   Template from <a href="https://jonbarron.info/" style="text-align:right;font-size:small;" target="_blank">Jon Barron</a>. 
                   Icons by <a href="https://www.flaticon.com/authors/freepik" style="text-align:right;font-size:small;" target="_blank">Freepik</a>.
