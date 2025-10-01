@@ -92,18 +92,18 @@ th,
 tr,
 p,
 a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Crimson Text', 'Times New Roman', serif;
   font-size: 16px;
 }
 
 abs {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Crimson Text', 'Times New Roman', serif;
   font-size: 15px;
   color:	#EB6400;
 }
 
 strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Crimson Text', 'Times New Roman', serif;
   font-size: 15px;
   font-style: oblique;
   font-weight: 600;
@@ -111,30 +111,30 @@ strong {
 }
 
 coa {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Crimson Text', 'Times New Roman', serif;
   font-size: 15px;
 }
 
 heading {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Crimson Text', 'Times New Roman', serif;
   font-size: 24px;
   /* font-weight: bold; */
 }
 
 papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Crimson Text', 'Times New Roman', serif;
   font-size: 17px;
   /* font-weight: bold; */
 }
 
 name {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Crimson Text', 'Times New Roman', serif;
   font-size: 30px;
   /* font-weight: bold; */
 }
 
 chname {
-  font-family: 'KaiTi', Verdana, Helvetica, sans-serif;
+  font-family: 'Crimson Text', 'Times New Roman', serif;
   font-size: 30px;
   /* font-weight: bold; */
 }
