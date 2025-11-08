@@ -68,6 +68,7 @@
             <tr>
               <td style="padding:5px;padding-top:0;padding-bottom:15px;width:100%;vertical-align:middle">
                   <ul>
+                    <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">02/2025: One paper is accepted to 3DV 2026.</li>
                     <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">04/2025: I'll be joining Stanford Vision and Learning Lab as a summer research intern.</li>
                     <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">02/2025: One paper is accepted to CVPR 2025.</li>
                     <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">07/2024: One paper is (conditionally) accepted to SIGGRAPH Asia 2024.</li>
@@ -83,6 +84,43 @@
             <tr>
               <td style="padding:15px;padding-top:0;padding-bottom:0;width:100%;vertical-align:middle">
                 <heading>Publications</heading>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/arxiv24_zerohsi/teaser.jpg', width="300px"></td>
+              <td style="padding:15px;width:80%;vertical-align:middle">
+                <papertitle>ZeroHSI: Zero-Shot 4D Human-Scene Interaction by Video Generation</papertitle>
+                <br>
+                <strong>Hongjie Li</strong>*,
+                <a href="https://kovenyu.com/" target="_blank">Hong-Xing Yu</a>*,
+                <a href="https://lijiaman.github.io/" target="_blank">Jiaman Li</a>,
+                <a href="https://jiajunwu.com/" target="_blank">Jiajun Wu</a>
+                <br>
+                <em>3DV</em>, 2026
+                <br>
+                <a href="#" target="_blank">[Abs]</a>
+                &nbsp
+                <a href="static/publications/arxiv24_zerohsi/paper.pdf" target="_blank">[PDF]</a>
+                &nbsp
+                <a href="https://arxiv.org/abs/2412.18600" target="_blank">[arXiv]</a>
+                <!-- &nbsp
+                <a href="" target="_blank">[Code]</a> -->
+                <!-- &nbsp
+                <a href="" target="_blank">[Data]</a> -->
+                &nbsp
+                <a href="https://awfuact.github.io/zerohsi/" target="_blank">[Project]</a>
+                <!-- &nbsp
+                <a href="" target="_blank">[Hugging Face]</a> -->
+                <br>
+                <abs>
+                  Human-scene interaction (HSI) generation is crucial for applications in embodied AI, virtual reality, and robotics. Yet, existing methods cannot synthesize interactions in unseen environments such as in-the-wild scenes or reconstructed scenes, as they rely on paired 3D scenes and captured human motion data for training, which are unavailable for unseen environments. We present ZeroHSI, a novel approach that enables zero-shot 4D human-scene interaction synthesis, eliminating the need for training on any MoCap data. Our key insight is to distill human-scene interactions from state-of-the-art video generation models, which have been trained on vast amounts of natural human movements and interactions, and use differentiable rendering to reconstruct human-scene interactions. ZeroHSI can synthesize realistic human motions in both static scenes and environments with dynamic objects, without requiring any ground-truth motion data. We evaluate ZeroHSI on a curated dataset of different types of various indoor and outdoor scenes with different interaction prompts, demonstrating its ability to generate diverse and contextually appropriate human-scene interactions.
+                </abs>
+                <p>
+                  tl;dr: We leverage video generation models and differentiable rendering to synthesize zero-shot human-scene interactions without requiring motion capture data.
+                </p>
               </td>
             </tr>
           </tbody></table>
@@ -125,43 +163,6 @@
                 </abs>
                 <p>
                   tl;dr: Our text-guided motion editor combines dynamic body-part blending augmentation with an auto-regressive diffusion model to enable diverse motion editing without extensive pre-collected training data.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/arxiv24_zerohsi/teaser.jpg', width="300px"></td>
-              <td style="padding:15px;width:80%;vertical-align:middle">
-                <papertitle>ZeroHSI: Zero-Shot 4D Human-Scene Interaction by Video Generation</papertitle>
-                <br>
-                <strong>Hongjie Li</strong>*,
-                <a href="https://kovenyu.com/" target="_blank">Hong-Xing Yu</a>*,
-                <a href="https://lijiaman.github.io/" target="_blank">Jiaman Li</a>,
-                <a href="https://jiajunwu.com/" target="_blank">Jiajun Wu</a>
-                <br>
-                <em>arXiv</em>, 2024
-                <br>
-                <a href="#" target="_blank">[Abs]</a>
-                &nbsp
-                <a href="static/publications/arxiv24_zerohsi/paper.pdf" target="_blank">[PDF]</a>
-                &nbsp
-                <a href="https://arxiv.org/abs/2412.18600" target="_blank">[arXiv]</a>
-                <!-- &nbsp
-                <a href="" target="_blank">[Code]</a> -->
-                <!-- &nbsp
-                <a href="" target="_blank">[Data]</a> -->
-                &nbsp
-                <a href="https://awfuact.github.io/zerohsi/" target="_blank">[Project]</a>
-                <!-- &nbsp
-                <a href="" target="_blank">[Hugging Face]</a> -->
-                <br>
-                <abs>
-                  Human-scene interaction (HSI) generation is crucial for applications in embodied AI, virtual reality, and robotics. Yet, existing methods cannot synthesize interactions in unseen environments such as in-the-wild scenes or reconstructed scenes, as they rely on paired 3D scenes and captured human motion data for training, which are unavailable for unseen environments. We present ZeroHSI, a novel approach that enables zero-shot 4D human-scene interaction synthesis, eliminating the need for training on any MoCap data. Our key insight is to distill human-scene interactions from state-of-the-art video generation models, which have been trained on vast amounts of natural human movements and interactions, and use differentiable rendering to reconstruct human-scene interactions. ZeroHSI can synthesize realistic human motions in both static scenes and environments with dynamic objects, without requiring any ground-truth motion data. We evaluate ZeroHSI on a curated dataset of different types of various indoor and outdoor scenes with different interaction prompts, demonstrating its ability to generate diverse and contextually appropriate human-scene interactions.
-                </abs>
-                <p>
-                  tl;dr: We leverage video generation models and differentiable rendering to synthesize zero-shot human-scene interactions without requiring motion capture data.
                 </p>
               </td>
             </tr>
