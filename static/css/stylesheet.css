@@ -216,7 +216,7 @@ table {
   table tbody tr td table:first-of-type tbody tr td:last-child::before {
       content: "Hongjie Li";
       display: block;
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-family: 'Crimson Text', Verdana, Helvetica, sans-serif;
       font-size: 30px;
       text-align: center;
       margin-bottom: 1rem;
