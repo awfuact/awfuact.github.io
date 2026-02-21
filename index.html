@@ -68,6 +68,7 @@
             <tr>
               <td style="padding:5px;padding-top:0;padding-bottom:15px;width:100%;vertical-align:middle">
                   <ul>
+                    <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">02/2026: One paper is accepted to CVPR 2026.</li>
                     <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">11/2025: One paper is accepted to 3DV 2026.</li>
                     <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">04/2025: I'll be joining Stanford Vision and Learning Lab as a summer research intern.</li>
                     <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">02/2025: One paper is accepted to CVPR 2025.</li>
@@ -90,7 +91,7 @@
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-              <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/under-review26_anylift/teaser.png', width="300px"></td>
+              <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/cvpr26_anylift/teaser.png', width="300px"></td>
               <td style="padding:15px;width:80%;vertical-align:middle">
                 <papertitle>AnyLift: Scaling Motion Reconstruction from Internet Videos via 2D Diffusion</papertitle>
                 <br>
@@ -102,9 +103,9 @@
                 <a href="https://stanford-tml.github.io/main/" target="_blank">Karen Liu</a>,
                 <a href="https://jiajunwu.com/" target="_blank">Jiajun Wu</a>
                 <br>
-                <em>Under Review</em>, 2026
+                <em>CVPR</em>, 2026
                 <br>
-                <!-- <a href="#" target="_blank">[Abs]</a> -->
+                <a href="#" target="_blank">[Abs]</a>
                 <!-- &nbsp
                 <a href="" target="_blank">[PDF]</a> -->
                 <!-- &nbsp
@@ -119,10 +120,47 @@
                 <a href="" target="_blank">[Hugging Face]</a> -->
                 <br>
                 <abs>
-                  
+                  Reconstructing 3D human motion and human-object interactions (HOI) from Internet videos is a fundamental step toward building large-scale datasets of human behavior. Existing methods struggle to recover globally consistent 3D motion under dynamic cameras, especially for motion types underrepresented in current motion-capture datasets, and face additional difficulty recovering coherent human-object interactions in 3D. We introduce a two-stage framework leveraging 2D diffusion that reconstructs 3D human motion and HOI from Internet videos. In the first stage, we synthesize multi-view 2D motion data for each domain, leveraging 2D keypoints extracted from Internet videos to incorporate human motions that rarely appear in existing MoCap datasets. In the second stage, a camera-conditioned multi-view 2D motion diffusion model is trained on these domain-specific synthetic data to recover 3D human motion and 3D HOI in the world space. We demonstrate the effectiveness of our method on Internet videos featuring challenging motions such as gymnastics, as well as in-the-wild HOI videos, and show that it outperforms prior work in producing realistic human motion and human-object interaction.
                 </abs>
                 <p>
                   tl;dr: We propose a two-stage 2D diffusion framework that reconstructs globally consistent 3D human motion and human-object interactions from Internet videos with dynamic cameras.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/3dv26_zerohsi/teaser.jpg', width="300px"></td>
+              <td style="padding:15px;width:80%;vertical-align:middle">
+                <papertitle>ZeroHSI: Zero-Shot 4D Human-Scene Interaction by Video Generation</papertitle>
+                <br>
+                <strong>Hongjie Li</strong>*,
+                <a href="https://kovenyu.com/" target="_blank">Hong-Xing Yu</a>*,
+                <a href="https://lijiaman.github.io/" target="_blank">Jiaman Li</a>,
+                <a href="https://jiajunwu.com/" target="_blank">Jiajun Wu</a>
+                <br>
+                <em>3DV</em>, 2026
+                <br>
+                <a href="#" target="_blank">[Abs]</a>
+                &nbsp
+                <a href="static/publications/3dv26_zerohsi/paper.pdf" target="_blank">[PDF]</a>
+                &nbsp
+                <a href="https://arxiv.org/abs/2412.18600" target="_blank">[arXiv]</a>
+                <!-- &nbsp
+                <a href="" target="_blank">[Code]</a> -->
+                <!-- &nbsp
+                <a href="" target="_blank">[Data]</a> -->
+                &nbsp
+                <a href="https://awfuact.github.io/zerohsi/" target="_blank">[Project]</a>
+                <!-- &nbsp
+                <a href="" target="_blank">[Hugging Face]</a> -->
+                <br>
+                <abs>
+                  Human-scene interaction (HSI) generation is crucial for applications in embodied AI, virtual reality, and robotics. Yet, existing methods cannot synthesize interactions in unseen environments such as in-the-wild scenes or reconstructed scenes, as they rely on paired 3D scenes and captured human motion data for training, which are unavailable for unseen environments. We present ZeroHSI, a novel approach that enables zero-shot 4D human-scene interaction synthesis, eliminating the need for training on any MoCap data. Our key insight is to distill human-scene interactions from state-of-the-art video generation models, which have been trained on vast amounts of natural human movements and interactions, and use differentiable rendering to reconstruct human-scene interactions. ZeroHSI can synthesize realistic human motions in both static scenes and environments with dynamic objects, without requiring any ground-truth motion data. We evaluate ZeroHSI on a curated dataset of different types of various indoor and outdoor scenes with different interaction prompts, demonstrating its ability to generate diverse and contextually appropriate human-scene interactions.
+                </abs>
+                <p>
+                  tl;dr: We leverage video generation models and differentiable rendering to synthesize zero-shot human-scene interactions without requiring motion capture data.
                 </p>
               </td>
             </tr>
@@ -167,43 +205,6 @@
                 </abs>
                 <p>
                   tl;dr: We introduce a unified framework that enables humanoid robots to execute multimodal instructions by generating motion tokens through a shared representation and achieving real-time whole-body control.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/3dv26_zerohsi/teaser.jpg', width="300px"></td>
-              <td style="padding:15px;width:80%;vertical-align:middle">
-                <papertitle>ZeroHSI: Zero-Shot 4D Human-Scene Interaction by Video Generation</papertitle>
-                <br>
-                <strong>Hongjie Li</strong>*,
-                <a href="https://kovenyu.com/" target="_blank">Hong-Xing Yu</a>*,
-                <a href="https://lijiaman.github.io/" target="_blank">Jiaman Li</a>,
-                <a href="https://jiajunwu.com/" target="_blank">Jiajun Wu</a>
-                <br>
-                <em>3DV</em>, 2026
-                <br>
-                <a href="#" target="_blank">[Abs]</a>
-                &nbsp
-                <a href="static/publications/3dv26_zerohsi/paper.pdf" target="_blank">[PDF]</a>
-                &nbsp
-                <a href="https://arxiv.org/abs/2412.18600" target="_blank">[arXiv]</a>
-                <!-- &nbsp
-                <a href="" target="_blank">[Code]</a> -->
-                <!-- &nbsp
-                <a href="" target="_blank">[Data]</a> -->
-                &nbsp
-                <a href="https://awfuact.github.io/zerohsi/" target="_blank">[Project]</a>
-                <!-- &nbsp
-                <a href="" target="_blank">[Hugging Face]</a> -->
-                <br>
-                <abs>
-                  Human-scene interaction (HSI) generation is crucial for applications in embodied AI, virtual reality, and robotics. Yet, existing methods cannot synthesize interactions in unseen environments such as in-the-wild scenes or reconstructed scenes, as they rely on paired 3D scenes and captured human motion data for training, which are unavailable for unseen environments. We present ZeroHSI, a novel approach that enables zero-shot 4D human-scene interaction synthesis, eliminating the need for training on any MoCap data. Our key insight is to distill human-scene interactions from state-of-the-art video generation models, which have been trained on vast amounts of natural human movements and interactions, and use differentiable rendering to reconstruct human-scene interactions. ZeroHSI can synthesize realistic human motions in both static scenes and environments with dynamic objects, without requiring any ground-truth motion data. We evaluate ZeroHSI on a curated dataset of different types of various indoor and outdoor scenes with different interaction prompts, demonstrating its ability to generate diverse and contextually appropriate human-scene interactions.
-                </abs>
-                <p>
-                  tl;dr: We leverage video generation models and differentiable rendering to synthesize zero-shot human-scene interactions without requiring motion capture data.
                 </p>
               </td>
             </tr>
@@ -351,7 +352,7 @@
               <td style="padding:10px;width:18px;vertical-align:middle"><img src="static/images/Institution/svl.png", width="100px"></td>
               <td width="90%" valign="center">
                 <b>Stanford Vision and Learning Lab (SVL)</b>, Stanford University, USA
-                <br> Jun 2025 - Present
+                <br> Jun 2025 - Dec 2025
                 <br> Jun 2024 - Dec 2024
                 <br>
                 <br> <b>Research Intern</b>
@@ -393,7 +394,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Last updated: Jan. 2026
+                  Last updated: Feb. 2026
                   <br>
                   Template from <a href="https://jonbarron.info/" style="text-align:right;font-size:small;" target="_blank">Jon Barron</a>
                 </p>
