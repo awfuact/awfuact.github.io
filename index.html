@@ -35,8 +35,13 @@
                 </p>
                 <p>
                   I am a undergraduate student ('26) in <a href="https://eecs.pku.edu.cn/" target="_blank">School of EECS</a>, <a href="https://www.pku.edu.cn" target="_blank">Peking University</a>. 
+                  I am also a member of the <a href="https://zhi-class.ai/" target="_blank">PKU Zhi Class</a>.
                   I am currently a student researcher in <a href="https://pku.ai" target="_blank">Cognitive Reasoning Lab</a> at Peking University, advised by <a href="https://yzhu.io" target="_blank">Prof. Yixin Zhu</a>.
+                  I am also a student researcher in the General Vision Lab, <a href="https://bigai.ai" target="_blank">BIGAI</a>, and I'm grateful to be advised by <a href="https://siyuanhuang.com" target="_blank">Dr. Siyuan Huang</a>.
                   I spent two wonderful summers in <a href="https://svl.stanford.edu/" target="_blank">Stanford Vision and Learning Lab</a> at <a href="https://www.stanford.edu/" target="_blank">Stanford University</a>, advised by <a href="https://jiajunwu.com/" target="_blank">Prof. Jiajun Wu</a>.
+                </p>
+                <p>
+                  My research interests lie in 3D computer vision and graphics, including human-object/scene interaction (HOI/HSI), humanoid robot learning, 3D scene understanding, and visual generative modeling. My long-term goal is to build machines that perceive and reason about the physical world through interaction, ultimately developing algorithms that enable embodied agents like digital humans and robots to autonomously interact with their surroundings as humans do.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:lihongjie@stu.pku.edu.cn">Email</a>
@@ -163,6 +168,50 @@
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
+              <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/arxiv25_uniact/teaser.png', width="300px"></td>
+              <td style="padding:15px;width:80%;vertical-align:middle">
+                <papertitle>UniAct: Unified Motion Generation and Action Streaming for Humanoid Robots</papertitle>
+                <br>
+                <a href="https://jnnan.github.io/" target="_blank">Nan Jiang</a>*,
+                <a href="https://mileret.github.io/" target="_blank">Zimo He</a>*,
+                <a href="https://pku.ai/author/lexi-pang/" target="_blank">Lexi Pang</a>,
+                <a href="https://pku.ai/author/wanhe-yu/" target="_blank">Wanhe Yu</a>,
+                <a href="https://pku.ai/author/yunhao-li/" target="_blank">Yunhao Li</a>,
+                <strong>Hongjie Li</strong>,
+                <a href="https://jiemingcui.github.io/" target="_blank">Jieming Cui</a>,
+                <a>Yuhan Li</a>,
+                <a href="https://cfcs.pku.edu.cn/people/faculty/yizhouwang/index.htm" target="_blank">Yizhou Wang</a>,
+                <a href="https://yzhu.io/" target="_blank">Yixin Zhu</a>,
+                <a href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a>
+                <br>
+                <em>arXiv</em>, 2025
+                <br>
+                <a href="#" target="_blank">[Abs]</a>
+                &nbsp
+                <a href="static/publications/arxiv25_uniact/paper.pdf" target="_blank">[PDF]</a>
+                &nbsp
+                <a href="https://arxiv.org/abs/2512.24321" target="_blank">[arXiv]</a>
+                &nbsp
+                <a href="https://github.com/jnnan/uniact-code" target="_blank">[Code]</a>
+                &nbsp
+                <a href="https://jnnan.github.io/uniact/#dataset-section" target="_blank">[Data]</a>
+                &nbsp
+                <a href="https://jnnan.github.io/uniact/#" target="_blank">[Project]</a>
+                <!-- &nbsp
+                <a href="" target="_blank">[Hugging Face]</a> -->
+                <br>
+                <abs>
+                  A long-standing objective in humanoid robotics is the realization of versatile agents capable of following diverse multimodal instructions with human-level flexibility. Despite advances in humanoid control, bridging high-level multimodal perception with whole-body execution remains a significant bottleneck. Existing methods often struggle to translate heterogeneous instructions---such as language, music, and trajectories---into stable, real-time actions. Here we show that UniAct, a two-stage framework integrating a fine-tuned Multimodal Large Language Model (MLLM) with a causal streaming pipeline, enables humanoid robots to execute multimodal instructions with sub-500 ms latency. By unifying inputs through a shared discrete codebook via Finite Scalar Quantization (FSQ), UniAct ensures cross-modal alignment while constraining motions to a physically grounded manifold. This approach yields a 19% improvement in the success rate of zero-shot tracking of imperfect reference motions. We validate  UniAct on UA-Net, our 20-hour humanoid motion benchmark, demonstrating robust generalization across diverse real-world scenarios. Our results mark a critical step toward responsive, general-purpose humanoid assistants capable of seamless interaction through unified perception and control.
+                </abs>
+                <p>
+                  tl;dr: We introduce a unified framework that enables humanoid robots to execute multimodal instructions by generating motion tokens through a shared representation and achieving real-time whole-body control.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
               <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/cvpr25_motionrefit/teaser.jpg', width="300px"></td>
               <td style="padding:15px;width:80%;vertical-align:middle">
                 <papertitle>Dynamic Motion Blending for Versatile Motion Editing</papertitle>
@@ -184,7 +233,15 @@
                 &nbsp
                 <a href="https://arxiv.org/abs/2503.20724" target="_blank">[arXiv]</a>
                 &nbsp
+                <a href="https://github.com/emptybulebox1/motionRefit/" target="_blank">[Code]</a>
+                &nbsp
+                <a href="https://drive.google.com/file/d/1LiNgkRZ-Kmv5rKI3BOaHVCudhrMtE5hx/view?usp=sharing" target="_blank">[Data]</a>
+                &nbsp
                 <a href="https://awfuact.github.io/motionrefit/" target="_blank">[Project]</a>
+                &nbsp
+                <a href="https://huggingface.co/spaces/Yzy00518/motionReFit" target="_blank">[Hugging Face]</a>
+                &nbsp
+                <a href="https://techxplore.com/news/2025-04-dynamic-generate-realistic-human-motions.html" target="_blank">[TechXplore]</a>
                 <br>
                 <abs>
                   Text-guided motion editing enables high-level semantic control and iterative modifications beyond traditional keyframe animation. Existing methods rely on limited pre-collected training triplets (original motion, edited motion, and instruction), which severely hinders their versatility in diverse editing scenarios. We introduce MotionCutMix, an online data augmentation technique that dynamically generates training triplets by blending body part motions based on input text. While MotionCutMix effectively expands the training distribution, the compositional nature introduces increased randomness and potential body part incoordination. To model such a rich distribution, we present MotionReFit, an auto-regressive diffusion model with a motion coordinator. The auto-regressive architecture facilitates learning by decomposing long sequences, while the motion coordinator mitigates the artifacts of motion composition. Our method handles both spatial and temporal motion edits directly from high-level human instructions, without relying on additional specifications or Large Language Models (LLMs). Through extensive experiments, we show that MotionReFit achieves state-of-the-art performance in text-guided motion editing. Ablation studies further verify that MotionCutMix significantly improves the model's generalizability while maintaining training convergence.
@@ -218,7 +275,15 @@
                 &nbsp
                 <a href="https://arxiv.org/abs/2410.03187" target="_blank">[arXiv]</a>
                 &nbsp
+                <a href="https://github.com/mileret/lingo-release" target="_blank">[Code]</a>
+                &nbsp
+                <a href="https://drive.google.com/file/d/1RadpLt-woPvsIGk9yDW7yX7br3sRO-zi/view" target="_blank">[Data]</a>
+                &nbsp
                 <a href="https://lingomotions.com/" target="_blank">[Project]</a>
+                <!-- &nbsp
+                <a href="" target="_blank">[Hugging Face]</a> -->
+                &nbsp
+                <a href="https://techxplore.com/news/2024-11-framework-motions-human-characters-3d.html" target="_blank">[TechXplore]</a>
                 <br>
                 <abs>
                   Synthesizing human motions in 3D environments, particularly those with complex activities such as locomotion, hand-reaching, and Human-Object Interaction (HOI), presents substantial demands for user-defined waypoints and stage transitions. These requirements pose challenges for current models, leading to a notable gap in automating the animation of characters from simple human inputs. This paper addresses this challenge by introducing a comprehensive framework for synthesizing multi-stage scene-aware interaction motions directly from a single text instruction and goal location. Our approach employs an auto-regressive diffusion model to synthesize the next motion segment, along with an autonomous scheduler predicting the transition for each action stage. To ensure that the synthesized motions are seamlessly integrated within the environment, we propose a scene representation that considers the local perception both at the start and the goal location. We further enhance the coherence of the generated motion by integrating frame embeddings with language input. Additionally, to support model training, we present a comprehensive motion-captured (MoCap) dataset comprising 16 hours of motion sequences in 120 indoor scenes covering 40 types of motions, each annotated with precise language descriptions. Experimental results demonstrate the efficacy of our method in generating high-quality, multi-stage motions closely aligned with environmental and textual conditions.
@@ -248,6 +313,7 @@
                 <a href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a>
                 <br>
                 <em>CVPR</em>, 2024
+                <font color="red"><b>(Highlight)</b></font>
                 <br>
                 <a href="#" target="_blank">[Abs]</a>
                 &nbsp
@@ -255,7 +321,13 @@
                 &nbsp
                 <a href="https://arxiv.org/abs/2403.08629" target="_blank">[arXiv]</a>
                 &nbsp
+                <a href="https://github.com/jnnan/trumans_utils" target="_blank">[Code]</a>
+                &nbsp
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdF62BQ9TQTSTW0HzyNeRPhlzmREL5T8hUGn-484W1I3eVihQ/viewform" target="_blank">[Data]</a>
+                &nbsp
                 <a href="https://jnnan.github.io/trumans/" target="_blank">[Project]</a>
+                &nbsp
+                <a href="https://huggingface.co/spaces/jnnan/trumans" target="_blank">[Hugging Face]</a>
                 <br>
                 <abs>
                   Confronting the challenges of data scarcity and advanced motion synthesis in HSI modeling, we introduce the TRUMANS (Tracking Human Actions in Scenes) dataset alongside a novel HSI motion synthesis method. TRUMANS stands as the most comprehensive motion-captured HSI dataset currently available, encompassing over 15 hours of human interactions across 100 indoor scenes. It intricately captures whole-body human motions and part-level object dynamics, focusing on the realism of contact. This dataset is further scaled up by transforming physical environments into exact virtual models and applying extensive augmentations to appearance and motion for both humans and objects while maintaining interaction fidelity. Utilizing TRUMANS, we devise a diffusion-based autoregressive model that efficiently generates Human-Scene Interaction (HSI) sequences of any length, taking into account both scene context and intended actions. In experiments, our approach shows remarkable zero-shot generalizability on a range of 3D scene datasets (e.g., PROX, Replica, ScanNet, ScanNet++), producing motions that closely mimic original motion-captured sequences, as confirmed by quantitative experiments and human studies.
