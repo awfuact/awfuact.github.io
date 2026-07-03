@@ -32,7 +32,7 @@ function initTeaserFeature() {
             const contentCell = row.querySelector('td:nth-child(2)');
             const teaserLink = contentCell.querySelector('.teaser-link');
             
-            if (window.innerWidth < 640) {
+            if (window.matchMedia('(max-width: 640px)').matches) {
                 teaserCell.style.display = 'none';
                 teaserLink.style.display = 'inline';
             } else {

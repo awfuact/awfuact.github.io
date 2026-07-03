@@ -173,8 +173,8 @@ table {
   margin-left: auto;
 }
 
-/* Media query for screens smaller than 512px */
-@media screen and (max-width: 512px) {
+/* Media query for screens smaller than 640px */
+@media screen and (max-width: 640px) {
   /* Hide original name */
   td > p:first-child > name {
       display: none;
@@ -221,4 +221,8 @@ table {
       text-align: center;
       margin-bottom: 1rem;
   }
+}
+
+.nowrap-name {
+  white-space: nowrap;
 }
