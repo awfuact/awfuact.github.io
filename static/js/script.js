@@ -134,7 +134,7 @@ function initAbstractFeature() {
 document.addEventListener('DOMContentLoaded', function() {
     // Add vertical-align: top to the cells containing teaser and info
     document.querySelectorAll('table tbody tr td').forEach(cell => {
-        if (cell.querySelector('img[src*="teaser"]') || cell.querySelector('papertitle')) {
+        if (cell.querySelector('img[src^="static/publications/"]') || cell.querySelector('papertitle')) {
             cell.style.verticalAlign = 'top';
         }
     });
