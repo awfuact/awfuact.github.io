@@ -75,6 +75,18 @@ a:hover {
   text-decoration: underline;
 }
 
+.author-note-symbol {
+  font-family: 'Times New Roman', serif;
+}
+
+.author-note-marker {
+  position: relative;
+  top: -0.25em;
+  font-size: 85%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
 coa {
   color: #808080;
   text-decoration: none;
