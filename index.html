@@ -16,7 +16,7 @@
     
     <link rel="stylesheet" type="text/css" href="static/css/stylesheet.css">
     <script src="static/js/script.js"></script>
-    <link rel="icon" href="static/images/icon.png">
+    <link rel="icon" href="static/images/favicon.ico" sizes="any">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,12 +87,15 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:15px;padding-top:0;padding-bottom:0;width:100%;vertical-align:middle">
-                <heading>Selected Research</heading>
+                <heading>Research</heading>
+                <span class="research-filter" hidden>(<button type="button" data-research-filter="selected" aria-pressed="true">show selected</button>
+                  /
+                  <button type="button" data-research-filter="all" aria-pressed="false">show all by date</button>)</span>
               </td>
             </tr>
           </tbody></table>
           
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="research-paper" data-selected="true" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/arxiv26_vit-h.png', width="300px"></td>
               <td style="padding:15px;width:80%;vertical-align:middle">
@@ -133,7 +136,42 @@
             </tr>
           </tbody></table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="research-paper" data-selected="false" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/under_review26_probing.png', width="300px"></td>
+              <td style="padding:15px;width:80%;vertical-align:middle">
+                <papertitle>Probing Visual Idiosyncrasies in Text-to-Image Models</papertitle>
+                <br>
+                <a class="nowrap-name" href="https://ppyyqq.github.io/" target="_blank">Yongqian Peng</a>*,
+                <strong class="nowrap-name" >Hongjie Li</strong>*,
+                <a class="nowrap-name" href="https://zyclbt.github.io/" target="_blank">Yichao Zhou</a>*,
+                
+                <a class="nowrap-name" href="https://wellyzhang.github.io/" target="_blank">Chi Zhang</a><sup class="author-note-marker author-note-symbol">‡</sup>,
+                <a class="nowrap-name" href="https://yzhu.io/" target="_blank">Yixin Zhu</a><sup class="author-note-marker author-note-symbol">‡</sup>
+                <br>
+                <em>Under Review</em> 2026
+                <br>
+                <a class="nowrap-name" href="#" target="_blank">[Abs]</a>
+                <!-- &nbsp
+                <a class="nowrap-name" href="" target="_blank">[Paper]</a> -->
+                <!-- &nbsp
+                <a class="nowrap-name" href="" target="_blank">[arXiv]</a> -->
+                <!-- &nbsp
+                <a class="nowrap-name" href="" target="_blank">[Code]</a> -->
+                <!-- &nbsp
+                <a class="nowrap-name" href="" target="_blank">[Project Page]</a> -->
+                <br>
+                <abs>
+                  Text-to-Image (T2I) models turn short text descriptions into images, and the leading models now produce images of comparable visual quality. Whether their outputs still carry model-specific characteristics matters for attribution, for model comparison beyond aggregate quality, and for evaluations that assume anonymity. We ask whether images from frontier T2I models can still be classified by source, and which visual properties make this possible. Here we show that a standard ResNet-50 identifies the source of an image among  HiDream-O1-Dev, FLUX.2-dev, HunyuanImage-3.0, and Qwen-Image-2512, the four highest-ranked open-source models on the Text-to-Image Arena, with 99.75% accuracy on held-out prompts. Human participants reach only 64.03% on the pairwise version of this task, so the distinguishing cues are not visually obvious; they are also not tied to a particular classifier and survive severe image corruptions and out-of-distribution prompts. We trace them to visual idiosyncrasies at three levels: low-level texture statistics alone let a lightweight multi-layer perceptron match ResNet-50; object layout, depth, and albedo estimated from the images each carry a source signal; and image captions reveal model-specific preferences in style and background that the prompts never specify. A one-sentence hint about these cues raises human accuracy by seven percentage points. These idiosyncrasies make source classification a tool for measuring similarity between models and between real and generated images, and they caution against assuming anonymity in human preference evaluation of T2I models.
+                </abs>
+                <p>
+                  tl;dr: We uncover low-, mid-, and high-level visual idiosyncrasies that enable near-perfect source identification of images from frontier text-to-image models.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table class="research-paper" data-selected="true" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/cvpr26_anylift.png', width="300px"></td>
               <td style="padding:15px;width:80%;vertical-align:middle">
@@ -169,7 +207,7 @@
             </tr>
           </tbody></table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="research-paper" data-selected="true" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/3dv26_zerohsi.jpg', width="300px"></td>
               <td style="padding:15px;width:80%;vertical-align:middle">
@@ -204,7 +242,7 @@
             </tr>
           </tbody></table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="research-paper" data-selected="false" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/arxiv25_uniact.png', width="300px"></td>
               <td style="padding:15px;width:80%;vertical-align:middle">
@@ -248,7 +286,7 @@
             </tr>
           </tbody></table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="research-paper" data-selected="true" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/cvpr25_motionrefit.png', width="300px"></td>
               <td style="padding:15px;width:80%;vertical-align:middle">
@@ -287,7 +325,7 @@
             </tr>
           </tbody></table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="research-paper" data-selected="false" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/siggraph-asia24_lingo.jpg', width="300px"></td>
               <td style="padding:15px;width:80%;vertical-align:middle">
@@ -325,7 +363,7 @@
             </tr>
           </tbody></table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="research-paper" data-selected="true" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:20px;width:18px;vertical-align:middle"><img src='static/publications/cvpr24_trumans.jpg', width="300px"></td>
               <td style="padding:15px;width:80%;vertical-align:middle">

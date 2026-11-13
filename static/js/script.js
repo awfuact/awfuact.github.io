@@ -130,6 +130,27 @@ function initAbstractFeature() {
 }
 
 
+function initResearchFilter() {
+    const controls = document.querySelector('.research-filter');
+    const buttons = controls.querySelectorAll('button');
+    const papers = document.querySelectorAll('.research-paper');
+
+    function showResearch(mode) {
+        papers.forEach(paper => {
+            paper.hidden = mode === 'selected' && paper.dataset.selected !== 'true';
+        });
+        buttons.forEach(button => {
+            button.setAttribute('aria-pressed', button.dataset.researchFilter === mode);
+        });
+    }
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => showResearch(button.dataset.researchFilter));
+    });
+    showResearch('selected');
+    controls.hidden = false;
+}
+
 // Keep cells aligned at top
 document.addEventListener('DOMContentLoaded', function() {
     // Add vertical-align: top to the cells containing teaser and info
@@ -141,6 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     initTeaserFeature();
     initAbstractFeature();
+    // initResearchFilter();
 });
 
 // // Initialize both features when the DOM is loaded

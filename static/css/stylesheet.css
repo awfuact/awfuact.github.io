@@ -238,3 +238,28 @@ table {
 .nowrap-name {
   white-space: nowrap;
 }
+
+.research-filter {
+  margin-left: 4px;
+  font-size: 17px;
+}
+
+.research-filter button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #1772d0;
+  font: inherit;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.research-filter button[aria-pressed="true"] {
+  color: inherit;
+  font-weight: 600;
+}
+
+.research-filter button:hover,
+.research-filter button:focus-visible {
+  text-decoration: underline;
+}
